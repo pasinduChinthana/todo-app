@@ -5,12 +5,15 @@ import NewToDo from "../components/NewToDo";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button';
+import Tabs from 'react-bootstrap/Tabs';
+import Tab from 'react-bootstrap/Tab';
 
 class UserHome extends Component{
     constructor(props) {
         super(props);
         this.state={
-            addNewTask : false
+            addNewTask : false,
+            tabKey : "remaining",
         }
     }
 
@@ -22,6 +25,11 @@ class UserHome extends Component{
                 onSubmit = {()=>console.log('onsubmit')}
             />
         );
+    }
+
+    setTabKey = (key) => {
+        console.log(key);
+        this.setState({tabKey:key});
     }
 
 
@@ -38,6 +46,21 @@ class UserHome extends Component{
                         </Button>
                     </Col>
                 </Row>
+
+                    <Tabs
+                        id="controlled-tab-example"
+                        activeKey={this.state.tabKey}
+                        onSelect={(k) => this.setTabKey(k)}
+                    >
+                        <Tab eventKey="remaining" title="Remaining">
+                            Remaining
+                        </Tab>
+                        <Tab eventKey="completed" title="Completed">
+                           Completed
+                        </Tab>
+
+                    </Tabs>
+
                 {
                     this.state.addNewTask?
                        this.showAddNewTask()
