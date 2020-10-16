@@ -10,7 +10,7 @@ function App() {
     <div>
       <Layout>
       <RegisterForm/>
-
+       <UserHome/>
       </Layout>
     </div>
   );
