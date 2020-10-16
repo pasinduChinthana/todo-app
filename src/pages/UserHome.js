@@ -28,7 +28,6 @@ class UserHome extends Component{
     }
 
     setTabKey = (key) => {
-        console.log(key);
         this.setState({tabKey:key});
     }
 
