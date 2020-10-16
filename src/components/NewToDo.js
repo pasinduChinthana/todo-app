@@ -4,7 +4,22 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 class NewToDo extends Component{
+    constructor() {
+        super();
+        this.state = {
+            newTask : ''
+        }
+    }
 
+    handleOnChange = (value) => {
+        this.setState({newTask : value});
+    }
+
+    onSubmit = (event) => {
+        event.preventDefault();
+
+        this.props.onSubmit();
+    }
 
     render() {
        return(
@@ -20,10 +35,13 @@ class NewToDo extends Component{
                    </Modal.Title>
                </Modal.Header>
                <Modal.Body>
-                   <Form>
+                   <Form onSubmit={(e)=>this.onSubmit(e)}>
                        <Form.Group controlId="formBasicEmail">
                            <Form.Label>New Task</Form.Label>
-                           <Form.Control type="text" placeholder="Enter your task here"  required/>
+                           <Form.Control type="text" placeholder="Enter your task here"
+                                         value={this.state.newTask}
+                                         onChange={(e)=> this.handleOnChange(e.target.value)}
+                                         required/>
                            <Form.Text className="text-muted">
                                Charactor limit 200
                            </Form.Text>

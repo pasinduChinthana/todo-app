@@ -14,6 +14,7 @@ class UserHome extends Component{
                 <NewToDo
                     show = {true}
                     onHide = {()=>console.log('closing')}
+                    onSubmit = {()=>console.log('onsubmit')}
                     />
             </Container>
         );
