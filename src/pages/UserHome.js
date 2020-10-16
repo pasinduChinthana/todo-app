@@ -29,10 +29,10 @@ class UserHome extends Component{
         return(
             <Container>
                 <Row className={"p-3"}>
-                    <Col xs={12} md={8}>
-                        <h4>User' Todo List</h4>
+                    <Col xs={8} md={8}>
+                        <h4>User</h4>
                     </Col>
-                    <Col xs={12} md={4}>
+                    <Col xs={4} md={4}>
                         <Button className={"float-right"} onClick={()=>this.setState({addNewTask:true})}>
                             Add +
                         </Button>
