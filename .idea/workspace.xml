@@ -1,11 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="57967bde-9346-4e6f-a28c-c8332245ac5f" name="Default Changelist" comment="" />
+    <list default="true" id="57967bde-9346-4e6f-a28c-c8332245ac5f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SingleToDo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SingleToDo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/UserHome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/UserHome.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1isJv9ZDxrscRJUb7xjoEClFbea" />
   <component name="ProjectViewState">
@@ -15,7 +45,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.npm">
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -26,7 +72,126 @@
       <option name="presentableId" value="Default" />
       <updated>1602690596914</updated>
       <workItem from="1602690598841" duration="7000" />
+      <workItem from="1602826303471" duration="9742000" />
     </task>
+    <task id="LOCAL-00001" summary="user home initial">
+      <created>1602827415144</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602827415145</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add new task ui">
+      <created>1602827987640</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602827987640</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add new task functions">
+      <created>1602828335728</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602828335728</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add new task button">
+      <created>1602830133465</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602830133466</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add new task button">
+      <created>1602832108350</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602832108350</updated>
+    </task>
+    <task id="LOCAL-00006" summary="home tab view">
+      <created>1602836711842</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602836711842</updated>
+    </task>
+    <task id="LOCAL-00007" summary="home tab view">
+      <created>1602837095414</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1602837095414</updated>
+    </task>
+    <task id="LOCAL-00008" summary="font awesome library added">
+      <created>1602838533675</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1602838533675</updated>
+    </task>
+    <task id="LOCAL-00009" summary="remaining and completed tasks">
+      <created>1602840645183</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1602840645183</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="user home initial" />
+    <MESSAGE value="add new task ui" />
+    <MESSAGE value="add new task functions" />
+    <MESSAGE value="add new task button" />
+    <MESSAGE value="home tab view" />
+    <MESSAGE value="font awesome library added" />
+    <MESSAGE value="remaining and completed tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="remaining and completed tasks" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="141" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602826549152">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="141" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/1366.0.1366.768/0.23.1366.745@0.23.1366.745" timestamp="1602826549152" />
+    <state width="1345" height="185" key="GridCell.Tab.0.bottom" timestamp="1602838706049">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state width="1345" height="185" key="GridCell.Tab.0.bottom/1366.0.1366.768/0.23.1366.745@0.23.1366.745" timestamp="1602838706049" />
+    <state width="1345" height="185" key="GridCell.Tab.0.center" timestamp="1602838706049">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state width="1345" height="185" key="GridCell.Tab.0.center/1366.0.1366.768/0.23.1366.745@0.23.1366.745" timestamp="1602838706049" />
+    <state width="1345" height="185" key="GridCell.Tab.0.left" timestamp="1602838706049">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state width="1345" height="185" key="GridCell.Tab.0.left/1366.0.1366.768/0.23.1366.745@0.23.1366.745" timestamp="1602838706049" />
+    <state width="1345" height="185" key="GridCell.Tab.0.right" timestamp="1602838706049">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state width="1345" height="185" key="GridCell.Tab.0.right/1366.0.1366.768/0.23.1366.745@0.23.1366.745" timestamp="1602838706049" />
+    <state x="278" y="120" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1602840647873">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="278" y="120" width="800" height="525" key="Vcs.Push.Dialog.v2/1366.0.1366.768/0.23.1366.745@0.23.1366.745" timestamp="1602840647873" />
+    <state x="492" y="301" width="382" height="166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602826498567">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="492" y="301" width="382" height="166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1366.0.1366.768/0.23.1366.745@0.23.1366.745" timestamp="1602826498567" />
   </component>
 </project>
