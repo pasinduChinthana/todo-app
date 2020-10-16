@@ -46,6 +46,8 @@ class UserHome extends Component{
     }
 
 
+
+
     render() {
         return(
             <Container>
@@ -72,6 +74,7 @@ class UserHome extends Component{
                                         isRemaining = {true}
                                         task = {task.task}
                                         id = {task.id}
+                                        userId = {"1111"}
                                     />
                                 );
                             })}
@@ -83,6 +86,7 @@ class UserHome extends Component{
                                         isRemaining = {false}
                                         task = {task.task}
                                         id = {task.id}
+                                        userId = {"1111"}
                                     />
                                 );
                             })}

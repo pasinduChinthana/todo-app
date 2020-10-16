@@ -7,6 +7,9 @@ import Button from 'react-bootstrap/Button';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 export default function getSingleToDo(props){
+
+
+
     return (
         <Card className={"mt-2 mb-2"}>
             <Row>
@@ -17,12 +20,12 @@ export default function getSingleToDo(props){
                     <Card.Body style={{padding:"15px",paddingRight:"25px"}}>
                   <Row className={"float-right"}>
                       {props.isRemaining?
-                          <Button variant={"success"} className={"mr-2"} taskId={props.id}>
+                          <Button variant={"success"} className={"mr-2"} taskId={props.id} onClick={()=> handleDeleteTask(props.id, props.userId)}>
                               Done
                           </Button>
                           :null
                       }
-                      <Button variant={"warning"} taskId={props.id}>
+                      <Button variant={"warning"} taskId={props.id} onClick={()=> handleDeleteTask(props.id, props.userId)}>
                           Delete
                       </Button>
                   </Row>
@@ -32,4 +35,12 @@ export default function getSingleToDo(props){
             </Row>
         </Card>
     );
+}
+
+function handleDeleteTask(){
+
+}
+
+function handleCompleteTask(){
+
 }
