@@ -3,7 +3,7 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
-class NewToDo extends Component{
+class AddNewToDo extends Component{
     constructor() {
         super();
         this.state = {
@@ -55,4 +55,4 @@ class NewToDo extends Component{
 
 }
 
-export default NewToDo;
+export default AddNewToDo;

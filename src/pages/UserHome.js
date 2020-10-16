@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Container from 'react-bootstrap/Container';
-import NewToDo from "../components/NewToDo";
+import AddNewToDo from "../components/AddNewToDo";
 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
@@ -19,7 +19,7 @@ class UserHome extends Component{
 
     showAddNewTask = () => {
         return (
-            <NewToDo
+            <AddNewToDo
                 show = {true}
                 onHide = {()=>this.setState({addNewTask:false})}
                 onSubmit = {()=>console.log('onsubmit')}
