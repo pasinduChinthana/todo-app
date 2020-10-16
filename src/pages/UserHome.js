@@ -1,12 +1,26 @@
 import React, {Component} from 'react';
 import Container from 'react-bootstrap/Container';
 import AddNewToDo from "../components/AddNewToDo";
+import SingleToDo from "../components/SingleToDo";
 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
+
+const remainingTasks = [
+    {task: "go to library", id:'1234'},
+    {task: "buy apples", id:'2234'},
+    {task: "complete assignments", id:'3234'},
+]
+
+const completedTasks = [
+    {task: "go to gym", id:'6234'},
+    {task: "book an airline ticket", id:'5234'},
+    {task: "complete assignments", id:'4234'},
+]
+
 
 class UserHome extends Component{
     constructor(props) {
@@ -52,10 +66,26 @@ class UserHome extends Component{
                         onSelect={(k) => this.setTabKey(k)}
                     >
                         <Tab eventKey="remaining" title="Remaining">
-                            Remaining
+                            {remainingTasks.map((task, index)=>{
+                                return(
+                                    <SingleToDo
+                                        isRemaining = {true}
+                                        task = {task.task}
+                                        id = {task.id}
+                                    />
+                                );
+                            })}
                         </Tab>
                         <Tab eventKey="completed" title="Completed">
-                           Completed
+                            {completedTasks.map((task, index)=>{
+                                return(
+                                    <SingleToDo
+                                        isRemaining = {false}
+                                        task = {task.task}
+                                        id = {task.id}
+                                    />
+                                );
+                            })}
                         </Tab>
 
                     </Tabs>
