@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import UserHome from "./pages/UserHome";
 
 import Home from './pages/Home'
 
@@ -8,7 +9,10 @@ function App() {
   return (
     <div>
       <Layout>
-          <Home />
+
+
+        <UserHome/>
+
       </Layout>
     </div>
   );
