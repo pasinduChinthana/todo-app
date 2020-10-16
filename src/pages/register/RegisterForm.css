@@ -26,3 +26,9 @@ Form.Control{
     background-color: #262626;
     color: white;
 }
+.error{
+    color: red;
+    float: left;
+    font-weight: normal;
+
+}
