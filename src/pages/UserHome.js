@@ -9,13 +9,13 @@ import Button from 'react-bootstrap/Button';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 
-const remainingTasks = [
+const initialRemainingTasks = [
     {task: "go to library", id:'1234'},
     {task: "buy apples", id:'2234'},
     {task: "complete assignments", id:'3234'},
 ]
 
-const completedTasks = [
+const initialCompletedTasks = [
     {task: "go to gym", id:'6234'},
     {task: "book an airline ticket", id:'5234'},
     {task: "complete assignments", id:'4234'},
@@ -28,6 +28,8 @@ class UserHome extends Component{
         this.state={
             addNewTask : false,
             tabKey : "remaining",
+            remainingTasks: initialRemainingTasks,
+            completedTasks: initialCompletedTasks 
         }
     }
 
@@ -45,7 +47,24 @@ class UserHome extends Component{
         this.setState({tabKey:key});
     }
 
+    handleDeleteTask(id, status) {
+        if (status === "completed") {
+            this.setState({
+                completedTasks: this.state.completedTasks.filter(task => task.id !== id)
+            })
+        } else {
+            this.setState({
+                remainingTasks: this.state.remainingTasks.filter(task => task.id !== id)
+            })
+        }
+    }
 
+    handleCompleteTask(task) {
+        this.setState({
+            completedTasks: this.state.completedTasks.concat([task]),
+            remainingTasks: this.state.remainingTasks.filter(i => i.id !== task.id)
+        })
+    }
 
 
     render() {
@@ -68,25 +87,28 @@ class UserHome extends Component{
                         onSelect={(k) => this.setTabKey(k)}
                     >
                         <Tab eventKey="remaining" title="Remaining">
-                            {remainingTasks.map((task, index)=>{
+                            {this.state.remainingTasks.map((task, index)=>{
                                 return(
                                     <SingleToDo
                                         isRemaining = {true}
-                                        task = {task.task}
+                                        task = {task}
                                         id = {task.id}
                                         userId = {"1111"}
+                                        handleCompleteTask={(task) => this.handleCompleteTask(task)}
+                                        handleDeleteTask={(id, status) => this.handleDeleteTask(id, "remaining")}
                                     />
                                 );
                             })}
                         </Tab>
                         <Tab eventKey="completed" title="Completed">
-                            {completedTasks.map((task, index)=>{
+                            {this.state.completedTasks.map((task, index)=>{
                                 return(
                                     <SingleToDo
                                         isRemaining = {false}
-                                        task = {task.task}
+                                        task = {task}
                                         id = {task.id}
                                         userId = {"1111"}
+                                        handleDeleteTask={(id, status) => this.handleDeleteTask(id, "completed")}
                                     />
                                 );
                             })}
