@@ -1,4 +1,3 @@
-
 import React from 'react';
 import './App.css';
 import UserHome from "./pages/UserHome";
@@ -11,11 +10,10 @@ function App() {
     <div>
       <Layout>
       <RegisterForm/>
-       <UserHome/>
+
       </Layout>
     </div>
   );
 }
 
 export default App;
-
