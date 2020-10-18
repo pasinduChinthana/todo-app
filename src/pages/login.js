@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./login.css";
 
 export default function Login() {
@@ -7,11 +7,11 @@ export default function Login() {
         <div className = "login">
             <header>Todo-List App</header>
 
-            <p className = "p1">Welcome Back!</p>
+            <p className="p1">Welcome Back!</p>
 
-            <p className = "p2">SIGN IN</p>
+            <p className="p2">SIGN IN</p>
 
-            <form>
+            <form name="form">
 
                 <div className = "row">
                     <div className = "sec1">
@@ -20,12 +20,18 @@ export default function Login() {
                     </div>
 
                     <div className = "sec2">
-                        <input type="text" id="email" size="30"/><br/><br/>
-                        <input type="text" id="password" size="30"/>
+                        <input type="email" id="email" size="30" required/><br/><br/><br/>
+                        <input type="password" id="password" size="30" required/>
                     </div>
                 </div>
 
+                <input type="checkbox" name="rememberme" id="customControlInline"/>
+                <label className = "checkbox">Remember me</label><br/><br/>
+
                 <button type="submit">Sign In</button>
+
+                <p>Don't have an account? <span><a href="#">Sign Up</a></span></p>
+                <a href="#">Forgot your password?</a>
 
             </form>
         </div>
