@@ -1,19 +1,18 @@
-.login {
-    margin-left: 100px;
-    margin-right: 100px;
-    text-align: center;
+.card {
+    margin-left: auto;
+    margin-right: auto;
 }
-.login header {
+header {
     background-color: black;
     color: white;
     padding: 40px;
     font-size: 70px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
-.login .p1 {
+.p1 {
     font-size: 55px;
 }
-.login .p2 {
+.p2 {
     font-size: 45px;
 }
 .row {
@@ -25,7 +24,7 @@
     clear: both;
 }
 .sec1 {
-    margin-left: 620px;
+    margin-left: 250px;
     margin-right: 50px;
     float: left;
 }
@@ -37,20 +36,17 @@
     float: left;
 }
 form label {
-    font-size: 30px;
+    font-size: 15px;
 }
 .checkbox {
     padding: 10px;
 }
 button {
-    padding: 10px;
-    font-size: 25px;
-    background-color: black;
-    color: white;
-    border: 2px solid black;
-    border-radius: 15px;
     margin-bottom: 50px;
 }
 form p, form a {
     font-size: 24px;
+}
+form a {
+    margin-bottom: 20px;
 }

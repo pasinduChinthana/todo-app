@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import { FormGroup, FormLabel, FormControl, FormCheck, Button, Card } from "react-bootstrap";
 import "./login.css";
 
 export default function Login() {
 
     return (
-        <div className = "login">
+        <Card className="text-center card" style={{ width: '50rem' }}>
             <header>Todo-List App</header>
 
             <p className="p1">Welcome Back!</p>
@@ -15,26 +16,35 @@ export default function Login() {
 
                 <div className = "row">
                     <div className = "sec1">
-                        <label>Email</label><br/><br/><br/>
-                        <label>Password</label><br/>
+                        <FormGroup controlId="formEmailLabel">
+                            <FormLabel>Email</FormLabel>
+                        </FormGroup>
+                        <FormGroup controlId="formPasswordLabel">
+                            <FormLabel>Password</FormLabel>
+                        </FormGroup>
                     </div>
 
                     <div className = "sec2">
-                        <input type="email" id="email" size="30" required/><br/><br/><br/>
-                        <input type="password" id="password" size="30" required/>
+                        <FormGroup controlId="formEmail">
+                            <FormControl type="email" id="email" placeholder="Enter email" size="30" required/>
+                        </FormGroup>
+                        <FormGroup controlId="formPassword">
+                            <FormControl type="password" id="password" placeholder="Password" size="30" required/>
+                        </FormGroup>
                     </div>
                 </div>
 
-                <input type="checkbox" name="rememberme" id="customControlInline"/>
-                <label className = "checkbox">Remember me</label><br/><br/>
+                <FormGroup controlId="formCheckbox">
+                    <FormCheck type="checkbox" name="remember_me" label="Check me out" />
+                </FormGroup>
 
-                <button type="submit">Sign In</button>
+                <Button variant="dark" type="submit">Sign In</Button>
 
                 <p>Don't have an account? <span><a href="#">Sign Up</a></span></p>
                 <a href="#">Forgot your password?</a>
 
             </form>
-        </div>
+        </Card>
     );
 
 }
