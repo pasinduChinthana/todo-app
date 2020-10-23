@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { FormGroup, FormLabel, FormControl, FormCheck, Button, Card } from "react-bootstrap";
 import "./login.css";
 
 export default function Login() {
 
     return (
-        <Card className="text-center card" style={{ width: '50rem' }}>
+        <div className = "login">
             <header>Todo-List App</header>
 
             <p className="p1">Welcome Back!</p>
@@ -16,35 +15,26 @@ export default function Login() {
 
                 <div className = "row">
                     <div className = "sec1">
-                        <FormGroup controlId="formEmailLabel">
-                            <FormLabel>Email</FormLabel>
-                        </FormGroup>
-                        <FormGroup controlId="formPasswordLabel">
-                            <FormLabel>Password</FormLabel>
-                        </FormGroup>
+                        <label>Email</label><br/><br/><br/>
+                        <label>Password</label><br/>
                     </div>
 
                     <div className = "sec2">
-                        <FormGroup controlId="formEmail">
-                            <FormControl type="email" id="email" placeholder="Enter email" size="30" required/>
-                        </FormGroup>
-                        <FormGroup controlId="formPassword">
-                            <FormControl type="password" id="password" placeholder="Password" size="30" required/>
-                        </FormGroup>
+                        <input type="email" id="email" size="30" required/><br/><br/><br/>
+                        <input type="password" id="password" size="30" required/>
                     </div>
                 </div>
 
-                <FormGroup controlId="formCheckbox">
-                    <FormCheck type="checkbox" name="remember_me" label="Check me out" />
-                </FormGroup>
+                <input type="checkbox" name="rememberme" id="customControlInline"/>
+                <label className = "checkbox">Remember me</label><br/><br/>
 
-                <Button variant="dark" type="submit">Sign In</Button>
+                <button type="submit">Sign In</button>
 
                 <p>Don't have an account? <span><a href="#">Sign Up</a></span></p>
                 <a href="#">Forgot your password?</a>
 
             </form>
-        </Card>
+        </div>
     );
 
 }
